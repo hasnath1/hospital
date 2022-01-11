@@ -7,7 +7,7 @@ const Card = ({
   img_url = "/image/injured_man.jpg",
 }) => {
   return (
-    <div className="max-w-[390px] border border-blue rounded-[10px] flex flex-col">
+    <div className="max-w-[390px] border border-blue rounded-[10px] flex flex-col mt-2">
       <div>
         <Image
           src={img_url}
@@ -15,6 +15,7 @@ const Card = ({
           width={390}
           height={220}
           className="rounded-tl-[10px] rounded-tr-[10px]"
+          priority
         />
       </div>
 

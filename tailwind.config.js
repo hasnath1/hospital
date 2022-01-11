@@ -5,7 +5,11 @@ module.exports = {
     "./sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "left-right": "left-right 2s linear infinite",
+      },
+    },
 
     fontFamily: {
       poppins: "'Poppins',sans-serif",

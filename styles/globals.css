@@ -18,3 +18,17 @@
     @apply font-medium text-[#1353FF] hover:text-[#3a6eff];
   }
 }
+
+@keyframes left-right {
+  0%,
+  100% {
+    @apply translate-x-0;
+  }
+  25% {
+    transform: translateX(50%);
+  }
+
+  75% {
+    transform: translateX(-50%);
+  }
+}
