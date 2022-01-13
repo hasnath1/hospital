@@ -7,14 +7,14 @@ const Card = ({
   img_url = "/image/injured_man.jpg",
 }) => {
   return (
-    <div className="max-w-[390px] border border-blue rounded-[10px] flex flex-col mt-2">
-      <div>
+    <div className="max-w-[390px] rounded-[10px] flex flex-col mt-2 bg-white">
+      <div className="rounded-tl-[10px] rounded-tr-[10px] overflow-hidden">
         <Image
           src={img_url}
           alt="image"
           width={390}
           height={220}
-          className="rounded-tl-[10px] rounded-tr-[10px]"
+          className="rounded-tl-[10px] rounded-tr-[10px] transition-all duration-1000 group-hover:scale-150 group-hover:rotate-6"
           priority
         />
       </div>

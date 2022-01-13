@@ -9,6 +9,9 @@ module.exports = {
       animation: {
         "left-right": "left-right 2s linear infinite",
       },
+      boxShadow: {
+        "3xl": "0 0 10px #dddddd",
+      },
     },
 
     fontFamily: {

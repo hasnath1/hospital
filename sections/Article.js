@@ -4,7 +4,7 @@ import More_Option from "../components/More_Option_link/More_Option";
 
 const Article = () => {
   return (
-    <section className="py-8 bg-[#EFF6FF]">
+    <section className="py-16 bg-[#EFF6FF]">
       <Heading
         heading={"Our Articles"}
         sub={
@@ -13,6 +13,7 @@ const Article = () => {
       />
 
       <More_Option link={"/blog"} />
+
       <div className="grid grid-cols-1 mt-4 justify-items-center md:grid-cols-2 xl:grid-cols-3 max-w-[1200px] mx-auto">
         <Card img_url={"/image/injured_man.jpg"} />
         <Card img_url={"/image/man_beaten.jpg"} />

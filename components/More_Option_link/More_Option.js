@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const More_Option = ({ link }) => {
   return (
-    <div className="text-right max-w-[1200px] mx-auto">
+    <div className="text-right max-w-[1200px] mx-auto my-4 px-2 xl:px-0 flex justify-end items-center">
       <Link href={link} passHref>
-        <div className="font-bold text-[#4E7EFF] flex justify-end items-center group cursor-pointer">
+        <div className="font-bold text-[#4E7EFF] group cursor-pointer flex items-center">
           <p className="mr-4">More Options</p>
           <svg
             width="18"
