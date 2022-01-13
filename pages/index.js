@@ -3,7 +3,7 @@ import Speciality from "../sections/Speciality";
 import Article from "../sections/Article";
 import FAQ from "../sections/Faq";
 import Doctors from "../sections/Doctors";
-import Doctor from "../components/Doctor/Doctor_2";
+import Doctor from "../components/Doctor/Doctor_4";
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
       <FAQ />
       <br /> <br /> <br />
       <Doctor
-        name={"Hasnath Abdullah"}
+        name={"Aisha Sultan"}
         occupation={"Neurologist"}
-        img_url={"/image/doctors/doctor_1.png"}
+        img_url={"/image/doctors/doctor_3.png"}
         fb={"#"}
         twitter={"#"}
         instagram={"#"}
