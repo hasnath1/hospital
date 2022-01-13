@@ -11,7 +11,7 @@ const Doctor = ({
   instagram = "#",
 }) => {
   return (
-    <div className="p-[22px] pt-[18px] max-w-[260px] rounded-[5px] shadow-3xl flex flex-col items-center m-8">
+    <div className="p-[22px] pt-[18px] max-w-[260px] rounded-[5px] shadow-3xl flex flex-col items-center">
       <div className="flex justify-center items-center w-[75px] h-[75px] overflow-hidden">
         <Image src={img_url} width={75} height={75} alt={name} />
       </div>
