@@ -76,7 +76,7 @@ const Login = () => {
               </Link>
             </div>
 
-            <p className="text-center">
+            <p className="text-center text-[#777777]">
               Don’t have an account ?
               <Link href={"/sign"} passHref>
                 <span className="font-medium text-[#1353FF] cursor-pointer">
