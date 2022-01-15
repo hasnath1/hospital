@@ -5,7 +5,7 @@ import Image from "next/image";
 import facebook from "../public/icons/fb_color.svg";
 import google from "../public/icons/google.svg";
 
-const Login = () => {
+const SignUp = () => {
   return (
     <>
       <Navbar />
@@ -16,32 +16,39 @@ const Login = () => {
         >
           <div className="text-center">
             <h1 className="text-4xl text-[#000000] font-bold">
-              Log in for <span className="text-[#4879FF]">Medics</span>
+              Sign Up for <span className="text-[#4879FF]">Medics</span>
             </h1>
             <p className="text-sm text-[#444444] mt-2 mb-6">
               Connect with the best doctors and nurses
             </p>
           </div>
 
-          <Input
-            name={"Email"}
-            type={"email"}
-            placeholder={"Enter your email"}
-          />
+          <Input name={"Name"} type={"email"} placeholder={"Name"} />
+          <Input name={"Email"} type={"email"} placeholder={"Email"} />
           <Input name={"Password"} type={"password"} placeholder={"Password"} />
 
-          <Link href={"/forget"} passHref>
-            <p
-              className={
-                "text-sm font-semibold text-[#4879FF] mb-4 cursor-pointer"
-              }
+          <div className="flex items-center mb-4">
+            <input
+              type="checkbox"
+              className="border-2 border-blue-800"
+              id="agreement-checkbox"
+            />
+            <label
+              htmlFor="agreement-checkbox"
+              className="text-[12px] text[#555555] ml-2"
             >
-              Forgot Password ?
-            </p>
-          </Link>
+              I agree to the
+              <Link href={"/terms_conditions"} passHref>
+                <span className="text-[#4879FF] cursor-pointer">
+                  {" "}
+                  Terms &#38; Conditions
+                </span>
+              </Link>
+            </label>
+          </div>
 
           <button className="font-semibold text-lg block bg-[#1353FF] text-white w-full rounded-[5px] py-4 hover:bg-[#4274ff]">
-            Log In
+            Sign Up
           </button>
 
           {/* Divider */}
@@ -81,11 +88,11 @@ const Login = () => {
             </div>
 
             <p className="text-center text-[#777777]">
-              Don’t have an account ?
-              <Link href={"/sign"} passHref>
+              Already have an account ?
+              <Link href={"/login"} passHref>
                 <span className="font-medium text-[#1353FF] cursor-pointer">
                   {" "}
-                  Sign up
+                  Log in
                 </span>
               </Link>
             </p>
@@ -96,4 +103,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
