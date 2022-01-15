@@ -31,7 +31,11 @@ const Login = () => {
           <Input name={"Password"} type={"password"} placeholder={"Password"} />
 
           <Link href={"/forget"} passHref>
-            <p className={"text-sm font-semibold text-[#4879FF] mb-4 "}>
+            <p
+              className={
+                "text-sm font-semibold text-[#4879FF] mb-4 cursor-pointer"
+              }
+            >
               Forgot Password ?
             </p>
           </Link>
