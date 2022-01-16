@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a:hover {
+  @apply underline;
+}
+
 * {
   @apply font-poppins;
 }

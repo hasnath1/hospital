@@ -5,6 +5,7 @@ import FAQ from "../sections/Faq";
 import Doctors from "../sections/Doctors";
 import Numbers from "../sections/Numbers";
 import Head from "next/head";
+import Footer from "../components/Footer/Footer_1";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Numbers />
       <Article />
       <FAQ />
+
+      <Footer />
     </>
   );
 }
