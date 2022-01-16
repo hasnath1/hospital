@@ -145,7 +145,7 @@ const Footer_1 = () => {
               >
                 <input
                   type="email"
-                  className="h-10 border-2 border-[#00217C] rounded-tl-[5px] rounded-bl-[5px] text-[14px] px-2 outline-none "
+                  className="h-10 border-2 border-[#00217C] rounded-tl-[5px] rounded-bl-[5px] text-[14px] px-2 outline-none"
                   placeholder="Your email"
                 />
                 <button
