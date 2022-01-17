@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="bg-white px-2 sm:px-4 xl:px-0 py-2.5 border">
         <div className="container flex flex-wrap justify-between items-center max-w-[1200px] mx-auto">
           <Link href="/" className="flex" passHref>
-            <a className="self-center text-lg font-semibold whitespace-nowrap text-[#4879FF]">
+            <a className="self-center text-lg font-semibold whitespace-nowrap text-[#4879FF] hover:no-underline">
               Medics
             </a>
           </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
 
           <div className="flex justify-center items-center md:order-2">
             <a
-              className="text-white rounded-full text-xs font-medium bg-[#4E7EFF] px-4 py-2 lg:mr-0 flex justify-center items-center hover:bg-[#6890ff]"
+              className="text-white rounded-full text-xs font-medium bg-[#4E7EFF] px-4 py-2 lg:mr-0 flex justify-center items-center hover:bg-[#6890ff] hover:no-underline"
               href="#application"
             >
               Appointment

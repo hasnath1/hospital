@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer_1 = () => {
+const Footer = () => {
   return (
     <section className="bg-[#EFF6FF]">
       <div className="max-w-[1200px] mx-auto py-8">
@@ -35,7 +35,11 @@ const Footer_1 = () => {
                   />
                 </svg>
 
-                <p className="ml-2">example@gmail.com</p>
+                <p className="ml-2">
+                  <a href="mailto:abdullahaknd297@gmail.com">
+                    example@gmail.com
+                  </a>
+                </p>
               </div>
 
               {/* phone number */}
@@ -60,7 +64,9 @@ const Footer_1 = () => {
                     fill="#00217C"
                   />
                 </svg>
-                <p className="ml-2">+88017-1075-5041</p>
+                <p className="ml-2">
+                  <a href="tel:+01741788002">+88017-1075-5041</a>
+                </p>
               </div>
             </div>
           </div>
@@ -209,4 +215,4 @@ const Footer_1 = () => {
   );
 };
 
-export default Footer_1;
+export default Footer;
