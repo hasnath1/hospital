@@ -4,6 +4,7 @@ import FAQ from "../sections/Faq";
 import Doctors from "../sections/Doctors";
 import Numbers from "../sections/Numbers";
 import Head from "next/head";
+import Hero from "../sections/Hero";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <title>Medics - Best Hospital in the World</title>
       </Head>
 
+      <Hero />
       <Speciality />
       <Doctors />
       <Numbers />
