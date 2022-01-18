@@ -11,7 +11,7 @@ const Card = ({
   const date = `${dateParts[2]} ${dateParts[1]}, ${dateParts[3]}`;
 
   return (
-    <div className="max-w-[390px] rounded-[10px] flex flex-col mt-2 bg-white group">
+    <div className="max-w-[390px] rounded-[10px] flex flex-col mt-2 bg-white group border">
       <div className="rounded-tl-[10px] rounded-tr-[10px] overflow-hidden">
         <Image
           src={img_url}

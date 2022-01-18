@@ -9,6 +9,7 @@ const Doctor = ({
   fb = "#",
   twitter = "#",
   instagram = "#",
+  link,
 }) => {
   return (
     <div className="p-[22px] pt-[18px] max-w-[500px] rounded-[5px] shadow-3xl flex">
@@ -31,7 +32,7 @@ const Doctor = ({
         <div className="flex justify-between items-center">
           {/*Social Media Icons  */}
 
-          <div className="grid grid-cols-3 gap-x-5">
+          <div className="grid grid-cols-3 gap-x-2 md:gap-x-5 -ml-5 md:ml-0">
             <Link href={fb} passHref>
               <svg
                 width="22"
@@ -87,7 +88,7 @@ const Doctor = ({
             </Link>
           </div>
 
-          <Link href={"#"} passHref>
+          <Link href={link ? link : "#"} passHref>
             <button className="rounded-[5px] bg-[#4E7EFF] text-white text-sm cursor-pointer py-3 px-7 hover:bg-[#2d65ff]">
               See info
             </button>

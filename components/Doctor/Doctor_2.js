@@ -9,6 +9,7 @@ const Doctor = ({
   fb = "#",
   twitter = "#",
   instagram = "#",
+  link,
 }) => {
   return (
     <div className="p-[22px] pt-[18px] max-w-[375px] rounded-[5px] shadow-3xl">
@@ -86,7 +87,7 @@ const Doctor = ({
           </Link>
         </div>
 
-        <Link href={"#"} passHref>
+        <Link href={link ? link : "#"} passHref>
           <button className="rounded-[5px] bg-[#4E7EFF] text-white text-sm cursor-pointer py-3 px-7 hover:bg-[#2d65ff]">
             See info
           </button>

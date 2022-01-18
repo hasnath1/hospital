@@ -35,7 +35,9 @@ const Doctor = ({
         <p className="mt-2 mb-4 text-[#777777] font-medium text-[18px]">
           {occupation}
         </p>
-        <p className="text-[15px] text-[#777777] leading-6">{info}</p>
+        <p className="text-[15px] text-[#777777] leading-6">
+          {info.length > 270 ? `${info.substr(0, 270)}...` : info}
+        </p>
       </div>
     </div>
   );
