@@ -67,27 +67,39 @@ const Navbar = () => {
           >
             <ul className="flex flex-col justify-between md:flex-row">
               <li>
-                <a href="#" className="nav-link md:nav-active-link">
-                  Home
-                </a>
+                <Link passHref href={"/"}>
+                  <a className="nav-link md:nav-active-link">Home</a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="nav-link">
-                  About
-                </a>
+                <Link passHref href={"/about"}>
+                  <a className="nav-link">About</a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="nav-link">
-                  Services
-                </a>
+                <Link passHref href={"/doctors"}>
+                  <a className="nav-link">Doctors</a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="nav-link">
-                  Contact
-                </a>
+                <Link passHref href={"/faq"}>
+                  <a className="nav-link">Faq</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/login"}>
+                  <a className="nav-link">LogIn</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/sign"}>
+                  <a className="nav-link">Sign</a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,3 +1,3 @@
-module.exports = {
+module.exports = withTM({
   reactStrictMode: true,
-}
+});

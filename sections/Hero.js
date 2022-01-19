@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="border border-red-600">
+    <section>
       <div className="bg-[#EFF6FF]">
-        <div className="flex max-w-[1200px] mx-auto pb-24">
+        <div className="flex max-w-[1200px] mx-auto p-4 md:pb-44 lg:pb-40 xl:pb-24">
           <div className="max-w-[600px] flex flex-col justify-center">
             <h1 className="font-semibold text-[#1E40AF] text-[54px] mb-6">
               Welcome to medics
@@ -25,14 +25,14 @@ const Hero = () => {
 
           <div className="overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/image/hero.png" alt="hero" />
+            <img src="/image/hero.png" alt="hero" className="hidden lg:block" />
           </div>
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto -mt-44 flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto md:-mt-40 flex flex-col items-center justify-between lg:flex-row xl:-mt-44">
         {/* Blue Box */}
-        <div className="max-w-[300px] p-[28px] bg-[#4E7EFF] text-white rounded-[10px] h-[360px]">
+        <div className="mt-8 md:mt-0 max-w-[300px] p-[28px] bg-[#4E7EFF] text-white rounded-[10px] h-[360px] md:hidden lg:block">
           <h1 className="text-[34px] font-semibold mb-4 leading-10">
             Why choose Medics ?
           </h1>
@@ -51,7 +51,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="flex gap-x-4">
+        <div className="flex gap-4 mt-4 flex-col md:flex-row">
           <div className="p-6 bg-white shadow-lg flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
             <svg
               width="37"
