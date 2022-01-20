@@ -12,7 +12,7 @@ const FAQ = () => {
         }
       />
 
-      <More_Option link={"faq"} />
+      <More_Option link={"/faq"} />
 
       <div className="max-w-[1200px] mx-auto mt-6 grid gap-y-4 grid-cols-1 px-2 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-8">
         <QA

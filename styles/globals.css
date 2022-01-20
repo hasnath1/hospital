@@ -14,6 +14,10 @@ a:hover {
 }
 
 @layer base {
+  .terms-policy-header {
+    @apply font-semibold text-[26px] text-[#555555];
+  }
+
   .nav-link {
     @apply py-2 block text-[#252525] text-sm font-light hover:text-[#000] hover:underline md:px-[11px] md:py-0;
   }

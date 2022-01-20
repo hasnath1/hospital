@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Heading from "../components/Heading/Heading";
 import DatePicker from "react-datepicker";
 
@@ -105,7 +105,7 @@ const Form = () => {
             <select
               name="gender"
               id="gender"
-              className="border border-[#555555] p-4 outline-none rounded-[5px] w-full"
+              className="border border-[#555555] bg-white p-4 outline-none rounded-[5px] w-full"
             >
               <option value="gender">Select Your Gender</option>
               <option value="male">Male</option>
