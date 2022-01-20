@@ -70,12 +70,11 @@ What kind of music do planets listen to? Nep-tunes.`}
 
         <Option num={3} />
 
-        <div className="flex justify-center items-center mb-16">
+        <div className="flex justify-center items-center mb-16 mx-4">
           <Testimonial_3
             img={"/image/man_face.png"}
             name={"Guillermo Rauch"}
-            review={`This is the most simple looking testimonial design . I could have ever thought of  . If you like this , you can use it . “Dad, can you put my shoes on?" "No, I don't think they'll fit me.". This graveyard looks overcrowded. People must be dying to get in.
- If you like this design please write a comment .`}
+            review={`This is the most simple looking testimonial design . I could have ever thought of  . If you like this , you can use it . “Dad, can you put my shoes on?" "No, I don't think they'll fit me.". This graveyard looks overcrowded. People must be dying to get in. If you like this design please write a comment .`}
             second_line={"Thanks ,guys!"}
           />
         </div>
