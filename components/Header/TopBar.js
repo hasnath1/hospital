@@ -1,7 +1,7 @@
 const TopBar = () => {
   return (
     <div>
-      <div className="max-w-[1200px] m-auto py-[6px] hidden xl:flex  justify-between">
+      <div className="max-w-[1200px] m-auto py-[6px] hidden px-4 lg:flex lg:px-0  justify-between">
         {/* Contact Icons and Info */}
 
         <div className="flex">

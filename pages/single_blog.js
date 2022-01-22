@@ -1,4 +1,6 @@
 import Image from "next/image";
+import RelatedPost from "../components/RelatedPost/RelatedPost";
+import AuthorInfo from "../components/AuthorInfo/AuthorInfo";
 import { useState } from "react";
 import { data } from "../data/fakePostData";
 
@@ -23,19 +25,22 @@ const CopyLink = () => {
 
 const SingleBlogPost = () => {
   return (
-    <section>
-      <div className="flex justify-between border border-blue-800 max-w-[1200px] mx-auto">
-        <aside className=""></aside>
+    <section className="my-8">
+      <div className="flex justify-between max-w-[1200px] mx-auto">
+        {/* Author Info */}
 
-        <article className="p-8 border border-emerald-700 max-w-3xl">
+        <AuthorInfo info={data.author.info} name={data.author.name} />
+
+        {/* Main Article */}
+        <article className="p-6">
           <h1 className="font-semibold text-4xl text-[#333333] capitalize">
             {data.article.title}
           </h1>
 
-          <div className="mt-2 flex justify-between">
+          <div className="mt-2 flex justify-between items-center">
             <div className="flex justify-start items-center gap-x-4">
               {/* Author Image */}
-              <div className="rounded-full w-[40px] h-[40px] overflow-hidden border border-gray-200">
+              <div className="rounded-full w-[40px] h-[40px] overflow-hidden">
                 <Image
                   src={data.author.img}
                   alt={data.author.name}
@@ -45,13 +50,14 @@ const SingleBlogPost = () => {
               </div>
 
               {/* Article Info */}
-              <div className="flex justify-start items-center gap-3">
-                <h2 className="text-[15px] text-[#4879FF]">
+              <div className="flex justify-center items-start flex-col sm:flex-row sm:items-center sm:gap-3">
+                <h2 className="text-[12px] sm:text-[15px] text-[#4879FF] w-fit">
                   {data.author.name}
                 </h2>
 
-                <p className="text-[12px] text-[#777777] flex justify-start items-center gap-x-2">
-                  <span> {data.article.published}</span>|
+                <p className="text-[10px] sm:text-[12px] text-[#777777] flex-grow flex justify-start items-center gap-1 sm:gap-x-2">
+                  <span>{data.article.published}</span>
+                  <span>|</span>
                   <span>{data.article.readTime}</span>
                 </p>
               </div>
@@ -76,23 +82,87 @@ const SingleBlogPost = () => {
               alt={data.article.title}
               width={661}
               height={385}
+              layout="responsive"
             />
 
-            <div className="mt-4">
-              <h1 className="text-[26px] font-semibold text-[#333333]">
+            <div className="mt-4 text-[#555555] text-lg">
+              <h1 className="text-[26px] font-semibold text-[#333333] mb-1">
                 What is COVID-19?
               </h1>
 
-              <p className="text-lg my-1">
+              <p className="my-2">
                 A coronavirus is a kind of common virus that causes an infection
                 in your nose, sinuses, or upper throat. Most coronaviruses
-                aren&#39;t dangerous
+                aren&#39;t dangerous.
+              </p>
+
+              <p className="my-2">
+                In early 2020, after a December 2019 outbreak in China, the
+                World Health Organization identified SARS-CoV-2 as a new type of
+                coronavirus. The outbreak quickly spread around the world.
+              </p>
+
+              <p className="my-2">
+                It spreads the same way other coronaviruses do, mainly through
+                person-to-person contact. Infections range from mild to deadly.
+              </p>
+
+              <p className="my-2">
+                In early 2020, after a December 2019 outbreak in China, the
+                World Health Organization identified SARS-CoV-2 as a new type of
+              </p>
+
+              <h1 className="text-[26px] font-semibold text-[#333333] my-2">
+                On two Sides You can put ads
+              </h1>
+
+              <p className="my-2">
+                The main symptoms include : Fever ,Coughing ,Shortness of breath
+                ,Trouble ,reathing ,Fatigue ,Chills, Body aches ,Headache ,Sore
+                throat ,runny nose ,Loss of smell or taste ,Nausea ,Diarrhea
+              </p>
+
+              <h1 className="text-[26px] font-semibold text-[#333333] my-2">
+                Or some related articles{" "}
+              </h1>
+
+              <p>
+                There&#39;s no way to tell how long the pandemic will continue.
+                There are many factors, including the public&#39;s efforts to
+                slow the spread, researchers&#39; work to learn more about the
+                virus, and the health of the people who are infected.
+              </p>
+
+              <h1 className="text-[26px] font-semibold text-[#333333] my-2">
+                Or just author info
+              </h1>
+
+              <p>
+                Unlike the flu, a lot of people aren&#39;t immune to the
+                coronavirus because it&#39;s so new. If you do catch it, the
+                virus triggers your body to make things called antibodies.
+                Researchers are looking at whether the antibodies give you
+                protection against catching it again
               </p>
             </div>
           </div>
         </article>
 
-        <aside className=""></aside>
+        <aside className="hidden lg:block flex-grow py-6">
+          <div className="sticky top-10">
+            <h1 className="text-[#333333] text-sm font-semibold mb-2">
+              Related
+            </h1>
+
+            <div>
+              <RelatedPost
+                img={"/image/single_post.png"}
+                href={"#"}
+                text={"How to prevent corona virus & improve health ? "}
+              />
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   );
