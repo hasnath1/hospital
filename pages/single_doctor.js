@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { data } from "../data/fakeData";
+import { data } from "../data/fakeDoctorData";
 
 const Info = ({ field, value }) => {
   return (
@@ -75,10 +75,10 @@ const SocialMedia = ({ fb_link, tw_link, instagram_link }) => {
 const SingleDoctor = () => {
   return (
     <section className="my-12">
-      <div className="max-w-[900px] mx-auto flex border border-gray-300 rounded-[5px]">
-        <div className="p-[22px] max-w-md border-r border-gray-300">
+      <div className="max-w-[900px] mx-auto flex flex-col md:flex-row border border-gray-300 rounded-[5px]">
+        <div className="p-[22px] md:max-w-md border-r border-gray-300">
           {/* Image */}
-          <div className="">
+          <div>
             <Image
               src={data.img_link}
               alt={data.name}
@@ -90,14 +90,14 @@ const SingleDoctor = () => {
           </div>
 
           {/* Info */}
-          <div className="">
+          <div>
             {/* Name */}
-            <h1 className="font-medium text-xl text-[#333333] text-center mt-2">
+            <h1 className="font-medium text-xl text-[#333333] text-center mt-4">
               {data.name}
             </h1>
 
             {/* Social Media Icons */}
-            <div className="my-4">
+            <div className="mt-2 mb-4">
               <SocialMedia {...data.socialMedia} />
             </div>
 
