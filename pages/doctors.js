@@ -55,6 +55,7 @@ const Doctors = () => {
             }
             name={"Hasnath Abdullah"}
             occupation={"Cardiologist"}
+            link={"/single_doctor"}
           />
 
           <Doctor_2
@@ -64,12 +65,14 @@ const Doctors = () => {
             }
             name={"Khalid Khan"}
             occupation={"Neurologist"}
+            link={"/single_doctor"}
           />
           <Doctor_2
             img_url={"/image/doctors/doctor_3.png"}
             info={
               "A doctor is someone who is qualified in medicine and treats people who are ill . Do continue the treatment without consulting your doctor. Doctor Paige will be ..."
             }
+            link={"/single_doctor"}
             name={"Aisha Khan"}
             occupation={"Cardiologist"}
           />
@@ -85,6 +88,7 @@ const Doctors = () => {
             }
             name={"Awabin Islam"}
             occupation={"Cardiologist"}
+            link={"/single_doctor"}
           />
           <Doctor_3
             img_url={"/image/doctors/doctor_5.png"}
@@ -93,6 +97,7 @@ const Doctors = () => {
             }
             name={"Hasan Mahi"}
             occupation={"Anthropologist"}
+            link={"/single_doctor"}
           />
         </div>
 
@@ -106,12 +111,14 @@ const Doctors = () => {
             }
             name={"Samiul Islam"}
             occupation={"Neurologist"}
+            link={"/single_doctor"}
           />
           <Doctor_4
             img_url={"/image/doctors/doctor_2.png"}
             info={
               "A doctor is someone who is qualified in medicine and treats people who are ill . Do continue the treatment "
             }
+            link={"/single_doctor"}
             name={"Shahriar Abdullah"}
             occupation={"Neurologist"}
           />
@@ -120,6 +127,7 @@ const Doctors = () => {
             info={
               "A doctor is someone who is qualified in medicine and treats people who are ill . Do continue the treatment "
             }
+            link={"/single_doctor"}
             name={"Rakib Khan"}
             occupation={"Neurologist"}
           />
@@ -128,6 +136,7 @@ const Doctors = () => {
             info={
               "A doctor is someone who is qualified in medicine and treats people who are ill . Do continue the treatment "
             }
+            link={"/single_doctor"}
             name={"James Smith"}
             occupation={"Neurologist"}
           />

@@ -9,6 +9,7 @@ const Doctor = ({
   fb = "#",
   twitter = "#",
   instagram = "#",
+  link = "#",
 }) => {
   return (
     <div className="p-[22px] pt-[18px] max-w-[260px] rounded-[5px] shadow-3xl flex flex-col items-center">
@@ -84,7 +85,7 @@ const Doctor = ({
       </p>
 
       <div className="flex justify-center items-center">
-        <Link href={"#"} passHref>
+        <Link href={link} passHref>
           <button className="rounded-[5px] bg-[#4E7EFF] text-white text-sm cursor-pointer py-3 px-7 hover:bg-[#2d65ff]">
             See info
           </button>

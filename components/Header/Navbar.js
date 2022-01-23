@@ -15,6 +15,7 @@ const Navbar = () => {
     return () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       if (navToggleBtn.current)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         navToggleBtn.current.removeEventListener("click", clickHandler);
     };
   });
@@ -73,12 +74,6 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link passHref href={"/about"}>
-                  <a className="nav-link">About</a>
-                </Link>
-              </li>
-
-              <li>
                 <Link passHref href={"/doctors"}>
                   <a className="nav-link">Doctors</a>
                 </Link>
@@ -92,13 +87,43 @@ const Navbar = () => {
 
               <li>
                 <Link passHref href={"/login"}>
-                  <a className="nav-link">LogIn</a>
+                  <a className="nav-link">Log in</a>
                 </Link>
               </li>
 
               <li>
                 <Link passHref href={"/sign"}>
-                  <a className="nav-link">Sign</a>
+                  <a className="nav-link">Sign up</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/blog"}>
+                  <a className="nav-link">Blog</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/testimonials"}>
+                  <a className="nav-link">Testimonials</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/privacy"}>
+                  <a className="nav-link">Privacy</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/single_doctor"}>
+                  <a className="nav-link">Doctor</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/single_blog"}>
+                  <a className="nav-link">Post</a>
                 </Link>
               </li>
             </ul>

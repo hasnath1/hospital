@@ -45,3 +45,7 @@ a:hover {
 .react-datepicker__triangle::before {
   display: none;
 }
+
+:root {
+  scroll-behavior: smooth;
+}

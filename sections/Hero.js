@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
 
             <Link href={"#appointment"} passHref>
-              <a className="font-medium py-[10px] bg-[#4E7EFF] px-4 rounded-full max-w-fit text-white">
+              <a className="font-medium py-[10px] bg-[#4E7EFF] px-4 rounded-full max-w-fit text-white hover:no-underline hover:bg-[#3d71ff]">
                 Get Appointment
               </a>
             </Link>
@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-4 mt-4 flex-col md:flex-row">
-          <div className="p-6 bg-white shadow-lg flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
+          <div className="p-6 bg-white shadow-sm hover:shadow-3xl transition duration-200 flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
             <svg
               width="37"
               height="37"
@@ -75,7 +75,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="p-6 bg-white shadow-lg flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
+          <div className="p-6 bg-white shadow-sm hover:shadow-3xl transition duration-200 flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
             <svg
               width="37"
               height="37"
@@ -105,7 +105,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="p-6 bg-white shadow-lg flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
+          <div className="p-6 bg-white shadow-sm hover:shadow-3xl transition duration-200 flex flex-col max-w-[230px] h-[300px] rounded-[5px] items-center">
             <svg
               width="37"
               height="37"

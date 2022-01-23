@@ -52,7 +52,7 @@ const About = () => {
             <Item text={"24/7 open"} />
           </div>
 
-          <Link href={"/about"} passHref>
+          <Link href={"#"} passHref>
             <a className="bg-[#4E7EFF] p-[10px] flex justify-center items-center hover:bg-[#3c70ff] text-white rounded-full max-w-[164px] mt-8 hover:no-underline">
               More Options
             </a>

@@ -54,7 +54,7 @@ const Form = () => {
   const [isFetching, setIsFetching] = useState(false);
 
   return (
-    <section className="my-16">
+    <section className="my-16" id="appointment">
       <Heading
         heading={"Make an appointment"}
         sub={
