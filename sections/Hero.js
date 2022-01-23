@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section>
       <div className="bg-[#EFF6FF]">
-        <div className="flex max-w-[1200px] mx-auto p-4 md:pb-44 lg:pb-40 xl:pb-24">
+        <div className="flex max-w-[1200px] mx-auto p-4 md:pb-44 lg:pb-[130px]">
           <div className="max-w-[600px] flex flex-col justify-center">
             <h1 className="font-semibold text-[#1E40AF] text-[54px] mb-6">
               Welcome to medics
