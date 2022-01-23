@@ -37,7 +37,7 @@ const Doctors = () => {
         />
 
         <Doctor
-          name={"Omar ibn khattab"}
+          name={"John Doe"}
           occupation={"Founder"}
           info={
             "This idiot was the founder of Medics . But we have kicked him out of the hospital because he does not pay well . He is experienced and certified to practice medicine to help maintain or restore physical and mental health. He is tasked with interacting with patients, diagnosing medical problems and successfully treating illness or injury. "
