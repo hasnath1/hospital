@@ -37,7 +37,7 @@ const SignUp = () => {
             className="text-[12px] text[#555555] ml-2"
           >
             I agree to the
-            <Link href={"/terms_conditions"} passHref>
+            <Link href={"/terms"} passHref>
               <span className="text-[#4879FF] cursor-pointer">
                 {" "}
                 Terms &#38; Conditions

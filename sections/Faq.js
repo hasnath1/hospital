@@ -16,9 +16,9 @@ const FAQ = () => {
 
       <div className="max-w-[1200px] mx-auto mt-6 grid gap-y-4 grid-cols-1 px-2 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-8">
         <QA
-          question={"Why are there no old women in heaven?"}
+          question={"Why did the tomato blush?"}
           answer={
-            " Because Allah will make them young before they get there. Prophet Muhammad(pbuh) used to joke . But it should be in manners.Lorem ipsum dolor sit amet, Loamet"
+            "Because it saw the salad dressing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nisi, rhoncus urna elementum proin vitae arcu."
           }
         />
         <QA
@@ -28,9 +28,9 @@ const FAQ = () => {
           }
         />
         <QA
-          question={"Why two fishes are fighting in water? "}
+          question={"Why was the skeleton afraid of the storm?"}
           answer={
-            "Because the british went there and made dispute . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nisi, rhoncus urna elementum proin vitae arcu."
+            "He didn’t have any guts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nisi, rhoncus urna elementum proin vitae arcu."
           }
         />
         <QA
@@ -46,9 +46,9 @@ const FAQ = () => {
           }
         />
         <QA
-          question={"Do all muslims have to wear a beard?"}
+          question={"What did the poop say to the fart?"}
           answer={
-            "Actually,No ! Not the girls . ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nisi, rhoncus urna elementum proin vitae arcu."
+            "Wow, you really blow me away! . ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nisi, rhoncus uurna elementum proin vitae arcu.rna elementum proin vitae arcu."
           }
         />
       </div>

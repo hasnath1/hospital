@@ -151,12 +151,12 @@ const Footer = () => {
               >
                 <input
                   type="email"
-                  className="h-10 border-2 border-[#00217C] rounded-tl-[5px] rounded-bl-[5px] text-[14px] px-2 outline-none"
+                  className="h-10 border-2 border-[#00217C] rounded-tl-[5px] rounded-bl-[5px] text-[14px] px-2 outline-none flex-shrink w-full"
                   placeholder="Your email"
                 />
                 <button
                   type="submit"
-                  className="text-white bg-[#00217C] h-10 w-24 font-semibold text-[14px] rounded-tr-[5px] rounded-br-[5px] hover:bg-[#002daa]"
+                  className="text-white bg-[#00217C] h-10 px-4 font-semibold text-[14px] rounded-tr-[5px] rounded-br-[5px] hover:bg-[#002daa] flex-grow"
                 >
                   Subscribe
                 </button>

@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="flex justify-center items-center md:order-2">
             <a
               className="text-white rounded-full text-xs font-medium bg-[#4E7EFF] px-4 py-2 lg:mr-0 flex justify-center items-center hover:bg-[#6890ff] hover:no-underline"
-              href="#application"
+              href="#appointment"
             >
               Appointment
             </a>
@@ -80,8 +80,32 @@ const Navbar = () => {
               </li>
 
               <li>
+                <Link passHref href={"/single_doctor"}>
+                  <a className="nav-link">Doctor</a>
+                </Link>
+              </li>
+
+              <li>
                 <Link passHref href={"/faq"}>
                   <a className="nav-link">Faq</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/blog"}>
+                  <a className="nav-link">Blog</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/single_blog"}>
+                  <a className="nav-link">Post</a>
+                </Link>
+              </li>
+
+              <li>
+                <Link passHref href={"/testimonials"}>
+                  <a className="nav-link">Testimonials</a>
                 </Link>
               </li>
 
@@ -98,32 +122,8 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link passHref href={"/blog"}>
-                  <a className="nav-link">Blog</a>
-                </Link>
-              </li>
-
-              <li>
-                <Link passHref href={"/testimonials"}>
-                  <a className="nav-link">Testimonials</a>
-                </Link>
-              </li>
-
-              <li>
                 <Link passHref href={"/privacy"}>
                   <a className="nav-link">Privacy</a>
-                </Link>
-              </li>
-
-              <li>
-                <Link passHref href={"/single_doctor"}>
-                  <a className="nav-link">Doctor</a>
-                </Link>
-              </li>
-
-              <li>
-                <Link passHref href={"/single_blog"}>
-                  <a className="nav-link">Post</a>
                 </Link>
               </li>
             </ul>
