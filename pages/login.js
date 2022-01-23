@@ -25,7 +25,7 @@ const Login = () => {
         <Input name={"Email"} type={"email"} placeholder={"Enter your email"} />
         <Input name={"Password"} type={"password"} placeholder={"Password"} />
 
-        <Link href={"/forget"} passHref>
+        <Link href={"#"} passHref>
           <p
             className={
               "text-sm font-semibold text-[#4879FF] mb-4 cursor-pointer"
